@@ -4,6 +4,8 @@ Say you have a pdf of some book or text and you want to print it, fold it and st
 
 pdffold is in a protype state and under active development.
 
+Please make feature-requests in the issues.
+
 ```
 usage: pdffold.py [-h] [--sel SEL] -o OUTPUT pdf_file
 
@@ -18,3 +20,8 @@ options:
   -o OUTPUT, --output OUTPUT
                         Output PDF file path
 ```
+
+Note:
+ - Doesn't support setting output page size, output height will equal input height, output width will equal twice the input width
+ - Requires all pages to have the same page size
+ - The CLI will change
