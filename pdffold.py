@@ -44,7 +44,7 @@ def main():
             else:
                 page_numbers.append(int(part))
     else:
-        page_numbers = range(1, indoc.page_count + 1)
+        page_numbers = list(range(1, indoc.page_count + 1))
 
     print(page_numbers)
     dimensions = get_page_dimensions(indoc, page_numbers)
